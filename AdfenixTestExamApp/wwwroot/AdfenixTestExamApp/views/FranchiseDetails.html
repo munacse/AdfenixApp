@@ -1,0 +1,72 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+<style>
+    div{
+        margin: 5px;
+    }
+</style>
+<template>
+    <template is="dom-bind">
+        <div>
+            <a href="/AdfenixTestExamApp"><< Back</a>
+        </div>
+        <div>
+            <h4>Setting: {{model.Name$}}</h4>
+        </div>
+        <div>
+            <h5>Edit Franchise Setting</h5>
+        </div>
+        <div>Name: <input value="{{model.Name$::input}}"></div>
+        <div>Street: <input value="{{model.Street$::input}}"></div>
+        <div>Number: <input value="{{model.Number$::input}}"></div>
+        <div>City: <input value="{{model.City$::input}}"></div>
+        <div>
+            Country: <input value="{{model.Country$::input}}">
+        </div>
+        <div>Address: {{model.Address}}</div>
+        <div>
+            <button value="{{model.SaveSettingTrigger$::click}}" onmousedown="++this.value">Save</button>
+        </div>
+        <div>
+            <h4>Register new Home of Sales</h4>
+        </div>
+        <div>Street: <input value="{{model.HomeStreet$::input}}"></div>
+        <div>Number: <input value="{{model.HomeNumber$::input}}"></div>
+        <div>City: <input value="{{model.HomeCity$::input}}"></div>
+        <div>
+            Country: <input value="{{model.HomeCountry$::input}}">
+        </div>
+        <div>
+            <h4>Transaction Info</h4>
+        </div>
+        <div>
+            Date[2016-04-21]: <input value="{{model.SalesDate$::input}}">
+        </div>
+        <div>
+            Sales price: <input value="{{model.Price$::input}}">
+        </div>
+        <div>
+            Commmission: <input value="{{model.Commission$::input}}">
+        </div>
+        <div>
+            <button value="{{model.SaveRegisterTrigger$::click}}" onmousedown="++this.value">Register</button>
+        </div>
+        <div>
+            <b>List of Transaction</b>
+        </div>
+        <div>
+            <div>
+                <div style="width:100%;clear:both">
+                    <div style="float:left;width:200px">Date</div>
+                    <div style="float: left; width: 200px">Sales Price</div>
+                    <div style="float: left; width: 200px">Commission</div>
+                    <div style="float:left;width:200px">Address</div>
+                </div>
+                <div style="clear:both"></div>
+                <template is="dom-repeat" items="{{model.Sales}}">
+                    <starcounter-include partial="{{item}}"></starcounter-include>
+                </template>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+    </template>
+</template>

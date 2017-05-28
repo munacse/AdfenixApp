@@ -7,7 +7,8 @@ namespace AdfenixTestExamApp
     {
         static void Main()
         {
-
+            var regiserRouteHandler = new RouteHandler();
+            regiserRouteHandler.RegisterRoute();
         }
     }
 }

@@ -1,0 +1,25 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+
+<template>
+    <template is="dom-bind">
+
+        <h2>Welcome</h2>
+        <h3>Create Main Corporation</h3>
+        <div style="margin:10px;">
+            <label>Name: </label>
+            <input value="{{model.Name$::input}}">
+        </div>
+        <button value="{{model.SaveCorporationTrigger$::click}}" onmousedown="++this.value">Create Corporation</button>
+        
+        <h3>List of Corporations</h3>
+        <template is="dom-if" if="{{model.IsShowCorporateList}}">
+            
+                <template is="dom-repeat" items="{{model.Corporates}}">
+                    <div style="border:1px solid; padding:10px;">
+                        <starcounter-include partial="{{item}}"></starcounter-include>
+                    </div>
+                </template>        
+        </template>
+
+    </template>
+</template>

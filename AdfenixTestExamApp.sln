@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdfenixTestExamApp", "AdfenixTestExamApp\AdfenixTestExamApp.csproj", "{5D646F5F-69CE-4117-9A9D-47E5D56D3C97}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdfenixTestExamApp.DataAccess", "AdfenixTestExamApp.DataAccess\AdfenixTestExamApp.DataAccess.csproj", "{E3B33C6C-BF11-4968-B7B7-ADDF11771634}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdfenixTestExamApp.Core", "AdfenixTestExamApp.Core\AdfenixTestExamApp.Core.csproj", "{3771D08F-C74D-4BFB-A6D6-571542FC52BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -15,6 +19,14 @@ Global
 		{5D646F5F-69CE-4117-9A9D-47E5D56D3C97}.Debug|x64.Build.0 = Debug|x64
 		{5D646F5F-69CE-4117-9A9D-47E5D56D3C97}.Release|x64.ActiveCfg = Release|x64
 		{5D646F5F-69CE-4117-9A9D-47E5D56D3C97}.Release|x64.Build.0 = Release|x64
+		{E3B33C6C-BF11-4968-B7B7-ADDF11771634}.Debug|x64.ActiveCfg = Debug|x64
+		{E3B33C6C-BF11-4968-B7B7-ADDF11771634}.Debug|x64.Build.0 = Debug|x64
+		{E3B33C6C-BF11-4968-B7B7-ADDF11771634}.Release|x64.ActiveCfg = Release|x64
+		{E3B33C6C-BF11-4968-B7B7-ADDF11771634}.Release|x64.Build.0 = Release|x64
+		{3771D08F-C74D-4BFB-A6D6-571542FC52BA}.Debug|x64.ActiveCfg = Debug|x64
+		{3771D08F-C74D-4BFB-A6D6-571542FC52BA}.Debug|x64.Build.0 = Debug|x64
+		{3771D08F-C74D-4BFB-A6D6-571542FC52BA}.Release|x64.ActiveCfg = Release|x64
+		{3771D08F-C74D-4BFB-A6D6-571542FC52BA}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

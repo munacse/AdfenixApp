@@ -1,0 +1,30 @@
+{
+  "Html": "/AdfenixTestExamApp/views/FranchiseDetails.html",
+  "Name$": "",
+  "Street$": "",
+  "Number$": "",
+  "ZipCode$": "",
+  "City$": "",
+  "Country$": "",
+  "Address$": "",
+
+  "HomeStreet$": "",
+  "HomeNumber$": "",
+  "HomeZipCode$": "",
+  "HomeCity$": "",
+  "HomeCountry$": "",
+  "HomeAddress$": "",
+
+  "SalesDate$": "",
+  "Price$": 0,
+  "Commission$": 0,
+
+  "Sales": [ {} ],
+
+  "CoporationKey": "",
+
+  "SaveSettingTrigger$": 0,
+  "SaveRegisterTrigger$": 0
+
+
+}

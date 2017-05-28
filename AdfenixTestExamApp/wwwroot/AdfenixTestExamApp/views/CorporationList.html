@@ -1,0 +1,38 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+<template>
+    <template is="dom-bind">
+        <div>
+            <div>
+                <h3>{{model.Name}}</h3>
+                <h5>Franchise Offices: </h5>
+            </div>
+            
+            <div>
+                <div>
+                    <div style="width: 100%; clear: both">
+                        <div style="float: left; width: 200px; font-weight:bold;">Name</div>
+                        <div style="float: left; width: 200px; font-weight:bold;">Number of Homes Sold</div>
+                        <div style="float: left; width: 200px; font-weight:bold;">Total Commission</div>
+                        <div style="float: left; width: 200px; font-weight:bold;">Total Average Commission</div>
+                        <div style="float: left; width: 200px; font-weight:bold;">Trend</div>
+                    </div>
+                    <div style="clear: both"></div>
+                    <template is="dom-repeat" items="{{model.Franchises}}">
+                        <starcounter-include partial="{{item}}"></starcounter-include>
+                    </template>
+                    <div style="clear: both"></div>
+                </div>
+            </div>
+
+            <div style="margin-top:20px;">
+                <h4>New Francise Office</h4>
+                <div style="margin:10px;">
+                    <label>Name: </label>
+                    <input value="{{model.NewFranchiseName$::input}}">
+                </div>
+                <button value="{{model.FranchiseSaveTrigger$::click}}" onmousedown="++this.value">Add Franchise</button>
+            </div>
+
+        </div>
+    </template>
+</template>

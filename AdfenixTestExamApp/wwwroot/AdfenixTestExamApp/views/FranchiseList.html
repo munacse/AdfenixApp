@@ -1,0 +1,17 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+<template>
+    <template is="dom-bind">
+        <div style="width:100%;clear:both">
+            <div style="float: left; width: 200px">
+                <a href="/AdfenixTestExamApp/Franchise/{{model.Key}}">
+                    {{model.Name}}&nbsp;
+                </a>
+            </div>
+            <div style="float: left; width: 200px">{{model.TotalHomeSold}}&nbsp;</div>
+            <div style="float: left; width: 200px">{{model.TotalCommission}}&nbsp;</div>
+            <div style="float: left; width: 200px">{{model.AverageCommission}}&nbsp;</div>
+            <div style="float: left; width: 200px">{{model.Trend}}&nbsp;</div>
+            <div style="float:left;width:200px">&nbsp;</div>
+        </div>
+    </template>
+</template>
